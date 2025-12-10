@@ -15,6 +15,31 @@ A lightweight Chrome extension that automatically refreshes web pages at specifi
 
 ## Installation
 
+### Quick Install (Recommended)
+
+#### Option 1: Using the Installer Executable
+1. Download `TabRefresher-Installer.exe` from the [Releases](../../releases) page
+2. Run the installer and follow the prompts
+3. The installer will place files in your Program Files directory
+4. When prompted, open Chrome to `chrome://extensions/`
+5. Enable **Developer mode** and click **Load unpacked**
+6. Select the installation directory shown by the installer
+
+#### Option 2: Using PowerShell Script
+1. Download or clone this repository
+2. Open PowerShell as Administrator
+3. Navigate to the TabRefresher folder
+4. Run: `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process`
+5. Run: `.\install.ps1`
+6. Follow the on-screen instructions
+
+#### Option 3: Using Batch Script
+1. Download or clone this repository
+2. Double-click `install.bat`
+3. Follow the on-screen instructions
+
+### Manual Installation
+
 1. Clone or download this repository
 2. Open Chrome and navigate to `chrome://extensions/`
 3. Enable **Developer mode** (toggle in the top right)
@@ -59,4 +84,6 @@ Version 1.2
 
 This project is open source. Feel free to modify and distribute as needed.
 
-With help from ChatGPT.
+## AI Usage
+
+With help from ChatGPT and Github Copilot
