@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Refresh Extension</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Auto Refresh</h1>
+
+        <!-- Interval and Duration side by side -->
+        <div class="time-group">
+            <div class="time-item">
+                <label for="interval">Interval</label>
+                <div class="input-row">
+                    <input type="number" id="interval" min="1" value="5">
+                    <select id="interval-unit">
+                        <option value="sec">Sec</option>
+                        <option value="min">Min</option>
+                        <option value="hr">Hr</option>
+                    </select>
+                </div>
+            </div>
+            <div class="time-item">
+                <label for="duration">Duration</label>
+                <div class="input-row">
+                    <input type="number" id="duration" min="1" value="1">
+                    <select id="duration-unit">
+                        <option value="min">Min</option>
+                        <option value="hr">Hr</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="group">
+            <label>
+                <input type="checkbox" id="hard-refresh"> Hard Refresh (Ctrl+Shift+R)
+            </label>
+        </div>
+
+        <div class="group">
+            <label>
+                <input type="checkbox" id="dark-mode-checkbox"> Dark Mode
+            </label>
+        </div>
+
+        <div class="buttons">
+            <button id="start-btn" class="btn">Start</button>
+            <button id="stop-btn" class="btn stop">Stop</button>
+        </div>
+
+        <div class="status">
+            <span id="status">Stopped.</span>
+        </div>
+
+        <div class="group">
+            <label>Active Tabs:</label>
+            <div id="active-tabs" class="tab-list">
+                No active tabs.
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
