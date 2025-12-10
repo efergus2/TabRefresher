@@ -21,10 +21,9 @@ A lightweight Chrome extension that automatically refreshes web pages at specifi
 1. Download `TabRefresher-Installer.exe` from the [Releases](../../releases) page
 2. Run the installer and follow the prompts
 3. The installer will place files in your Program Files directory
-4. At the end of installation, you'll see instructions to complete setup in Chrome
-5. Open Chrome and navigate to `chrome://extensions/`
-6. Enable **Developer mode** (toggle in top right)
-7. Click **Load unpacked** and select the installation directory shown in the installer message
+4. When prompted, open Chrome to `chrome://extensions/`
+5. Enable **Developer mode** and click **Load unpacked**
+6. Select the installation directory shown by the installer
 
 #### Option 2: Using PowerShell Script
 1. Download or clone this repository
@@ -38,23 +37,6 @@ A lightweight Chrome extension that automatically refreshes web pages at specifi
 1. Download or clone this repository
 2. Double-click `install.bat`
 3. Follow the on-screen instructions
-
-#### Option 4: Manual Installation
-1. Clone or download this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable **Developer mode** (toggle in the top right)
-4. Click **Load unpacked** and select the TabRefresher folder
-5. The extension will appear in your Chrome toolbar
-
-### Building the Installer from Source
-
-To build the `.exe` installer yourself:
-
-1. Download and install [NSIS](https://nsis.sourceforge.io/) (Nullsoft Scriptable Install System)
-2. Clone or download this repository
-3. Right-click `installer.nsi` and select **"Compile NSIS Script"**
-4. The installer `TabRefresher-Installer.exe` will be generated in the same directory
-5. Distribute the `.exe` file for easy installation
 
 ### Manual Installation
 
